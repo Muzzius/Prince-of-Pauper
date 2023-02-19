@@ -23,11 +23,3 @@ B
 blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
 <
 blog/urls.py,f\6\f6b33af54aee9a28118c42532a95bf2744e8df7d
-H
-blog/templates/post.html,3\2\3200c038d1ca6f7cd22508820bc5448d2215b0cd
-B
-user_auth/views.py,a\e\aedd4cab40bc6aa41ff3cf2ef3f6339365d7c506
-L
-blog/templates/comments.html,9\a\9a924af900a3e8e7f5b943625b8969f791d7e8ce
-H
-blog/templates/blog.html,e\4\e4e7ce987b3a44a564aa21e8e686c17c613a7e12
