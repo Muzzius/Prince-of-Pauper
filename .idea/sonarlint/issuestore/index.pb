@@ -20,17 +20,11 @@ B
 <
 home/apps.py,d\6\d65e33e3959123bb1f464d16a66fad0bc016627c
 =
-blog/forms.py,8\d\8dc45ed33dbcc8b65458ba016179df9d26f67b91
-=
 blog/tests.py,a\d\ad2fa097158bb799ebb227eaa60d28b415e3f7c6
->
-blog/models.py,9\0\90f4c37dbfd7a96a1fb4496187f7e1fe7d61f3cf
 <
 blog/urls.py,f\6\f6b33af54aee9a28118c42532a95bf2744e8df7d
 H
 blog/templates/post.html,3\2\3200c038d1ca6f7cd22508820bc5448d2215b0cd
-=
-blog/views.py,e\7\e7a8c955252fc1494be19edcdaa6f927cd79a1a7
 B
 user_auth/views.py,a\e\aedd4cab40bc6aa41ff3cf2ef3f6339365d7c506
 L
