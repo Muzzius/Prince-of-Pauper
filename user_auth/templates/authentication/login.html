@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Login as User </h1>
+  <form action="{% url 'user_auth:authenticate_user' %}" method="post">
+  {% csrf_token %}
+
+  <label>Username</label>
+  <input type="text" name="username" placeholder="User" required>
+  <br/><br/>
+
+  <label>Password</label>
+  <input type="password" name="password" required>
+  <br/><br/>
+
+  <input class="btn btn-secondary" type="submit" value="Login" />
+  <a class="btn btn-secondary" href="{% url 'user_auth:register_user' %}">
+    Register
+  </a>
+</form>
+{% endblock %}

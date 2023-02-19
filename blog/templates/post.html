@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<h3><a href="/blog/{{blog_post.id}}">{{ post.title }}</a></h3>
+<h6> on {{ post.date }}</h6>
+<div class = "container">
+  {{ post.body|safe|linebreaks}}
+</div>
+<h6 class="fw-light"> Posted by - {{ post.author }}</h6>
+<span><a href="/blog">Return</a></span>
+<br><br>
+<!-- COMMENTS  -->
+<h4>Leave your comment!</h4>
+<div id="comments_section">
+
+  {% if user.is_authenticated %}
+  <form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      {{ comment_form }}
+      <button class="btn btn-info" type="submit">Add comment</button>
+    </div>
+  </form>
+  {% else %}
+  <a class="btn btn-outline-info" href="{% url 'user_auth:login' %}?next={{request.path}}">
+    Log in to add a comment!</a><br>
+  {% endif %}
+
+  {% if comments %}
+  <strong class="text-secondary">{{ object.number_of_comments }} Comment{{ object.number_of_comments|pluralize }}</strong>
+  <hr>
+  <ul>
+    {% for comment in comments %}
+    <li>
+     <div>
+        <span>
+          <strong class="text-info">{{ comment.author }} </strong>
+          <small class="text-muted">{{ comment.date_posted }}</small>
+        </span>
+        <p>
+          {{ comment.body|safe }}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <strong class="text-secondary">No comments yet...</strong>
+  {% endif %}
+</div>
+
+{% endblock %}
