@@ -66,7 +66,7 @@ This also includes comments at the bottom of the page, and if you are logged in 
 
 
 ## Running in a container
-To run this projext in a container you will either need to install Docker Decktop (https://www.docker.com/) or creat an account on Docker and use Docker Playground (https://labs.play-with-docker.com/)
+To run this project in a container you will either need to install Docker Decktop (https://www.docker.com/) or creat an account on Docker and use Docker Playground (https://labs.play-with-docker.com/)
 
 ### To run with Docker Desktop
 1. Using command line in the root directory for the project (where the Dockerfile is found) run 
