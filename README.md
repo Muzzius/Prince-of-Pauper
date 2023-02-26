@@ -7,16 +7,15 @@ Currently the site has a home page and a page for articles which also includes f
 Their is user account registration and login supported by Django included, necessary for making comments.
 
 ## Requirements
-1. Django - https://www.djangoproject.com/download/
-2. Python 3 - https://www.python.org/downloads/
+1. Python 3 - https://www.python.org/downloads/
 
 ## Installation
 1. Download all files to a folder on your PC.
-2. I suggest creating a virtual environment to work on this. To do this:
-   1. In windows command line run the command "python -m pip install pip"
-   2. Then use the commands "pip install virtualenv" followed by "pip install virtualenvwrapper-win"
-   3. You can now enter "mkvirtualenv [name of your virtual environment]" to create a virtual environment
-     You can now use the command "workon [name of your virtual environment]" to begin working in the virtual environment.
+2. In command prompt navigate to the root directory for this project and run - 'pip install -r requirements.txt' to download required packages
+3. I suggest creating a virtual environment to work on this. To do this:
+   1. In windows command line run the command "pip install virtualenv" followed by "pip install virtualenvwrapper-win"
+   2. You can now enter "mkvirtualenv [name of your virtual environment]" to create a virtual environment
+     You can now use the command "workon [name of your virtual environment]" to begin working in the virtual environment and deactivate to stop working in the virtual environment.
 3. In order for the site to run correctly you will need to make migrations for the 'blog' app which handles articles and comments.
   to do this:
    1. In command prompt use the command "cd [filepath for the directory you downloaded this project to]" to select the project directory.
