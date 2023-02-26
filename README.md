@@ -90,8 +90,8 @@ To run this projext in a container you will either need to install Docker Deckto
    'docker push [user]/[repo]'
 5. Now you can login to Docker playground with your Docker account and start a session and begin a new instance/
 6. In the instance enter
-   'docker run -d -p 80:80 [user]/[repo]'
-   Once this finishes executing the port number you enter should appear next to the 'open port' button near the top of the screen
+   'docker run -d -p 8000:8000 [user]/[repo]'
+   Once this finishes executing the port number, 8000, should appear next to the 'open port' button near the top of the screen
    If you click this it will take you to the app's web page.
 
 ## Credits
